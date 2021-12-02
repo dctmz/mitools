@@ -1,6 +1,7 @@
-import baseConfig from './rollup.config.base'
-import filesize from 'rollup-plugin-filesize'
-import strip from '@rollup/plugin-strip'
+import strip from '@rollup/plugin-strip';
+import filesize from 'rollup-plugin-filesize';
+
+import baseConfig from './rollup.config.base';
 
 export default {
   ...baseConfig,
@@ -12,4 +13,4 @@ export default {
     }),
     filesize(),
   ],
-}
+};
