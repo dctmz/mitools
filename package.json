@@ -1,12 +1,12 @@
 {
-  "name": "@dctxf/utils",
+  "name": "mitools",
   "version": "0.0.1",
   "description": "一些常用的工具类",
   "main": "dist/index.js",
-  "homepage": "https://github.com/dctmz/utils",
+  "homepage": "https://github.com/dctmz/mitools",
   "repository": {
     "type": "git",
-    "url": "git@github.com:dctmz/utils.git"
+    "url": "git@github.com:dctmz/mitools.git"
   },
   "files": [
     "src",
