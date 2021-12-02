@@ -34,6 +34,7 @@
     "lint:prettier": "prettier -c --write \"src/**/*\" --end-of-line auto",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint-staged": "lint-staged",
+    "version:check": "exec < /dev/tty && node ./scripts/check-version.js",
     "prepare": "husky install",
     "precommit": "lint-staged",
     "commit:verify": "commitlint -e $HUSKY_GIT_PARAMS"
