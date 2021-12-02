@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@dctxf/utils",
   "version": "0.0.1",
   "description": "一些常用的工具类",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
     "test": "jest",
     "test:c": "jest --coverage",
     "prepublish": "npm run build",
-    "pub": "npm publish --access=public",
+    "pub": "npm run build && npm publish --access=public",
     "pub:x": "npm run x && npm publish --access=public",
     "pub:y": "npm run y && npm publish --access=public",
     "pub:z": "npm run z && npm publish --access=public",
