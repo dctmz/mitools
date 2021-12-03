@@ -1,4 +1,4 @@
-const aCity = {
+const cities = {
   '11': '北京',
   '12': '天津',
   '13': '河北',
@@ -48,7 +48,7 @@ const isIdCardNo = (str: string) => {
     return false;
   }
 
-  if (!Object.keys(aCity).includes(num.substr(0, 2))) {
+  if (!Object.keys(cities).includes(num.substr(0, 2))) {
     return false;
   }
   // 下面分别分析出生日期和校验位
