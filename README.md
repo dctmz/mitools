@@ -10,9 +10,18 @@ npm i mitools
 
 ## 使用
 
-```
-import mitools from 'mitools'
+```js
+import mitools from 'mitools';
 
 isIdCardNo('xxx');
 // => false
 ```
+
+## 包含工具类
+
+| 完成情况 | 工具名称                  | 工具描述       | 是否经过测试 |
+| -------- | ------------------------- | -------------- | ------------ |
+| ✅       | [常用正则](./docs/reg.md) | 一些常用的正则 | ❎           |
+| ✅       | 判断身份证                |                | ❎           |
+| ✅       | URL 打开                  |                | ❎           |
+|          |                           |                | ❎           |
