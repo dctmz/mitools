@@ -4,7 +4,6 @@
  */
 export const isAndroid = () => {
   const u = navigator.userAgent.toLocaleLowerCase();
-  console.log(u);
   if (u.indexOf('android') > -1 || u.indexOf('adr') > -1) {
     return true;
   } else {

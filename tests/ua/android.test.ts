@@ -8,7 +8,6 @@ describe(`android test`, () => {
   vi.stubGlobal('navigator', {
     userAgent: uas.android,
   });
-  console.log(navigator.userAgent);
   it(`isAndroid true`, () => {
     expect(isAndroid()).toBe(true);
   });
