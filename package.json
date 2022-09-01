@@ -1,6 +1,6 @@
 {
   "name": "mitools",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "一些常用的工具类",
   "homepage": "https://github.com/dctmz/mitools",
   "main": "lib/index.js",
