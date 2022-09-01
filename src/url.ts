@@ -7,7 +7,7 @@ const reg = /\/$/g;
  * @returns boolean
  */
 export const includePath = (url: string, urls: string[]) => {
-  return urls.map((i) => i.replace(reg, '')).includes(url.replace(reg, ''));
+  return urls.map(i => i.replace(reg, '')).includes(url.replace(reg, ''));
 };
 
 /**
