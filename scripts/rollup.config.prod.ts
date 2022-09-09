@@ -1,12 +1,15 @@
 import strip from '@rollup/plugin-strip';
+import { RollupOptions } from 'rollup';
 import filesize from 'rollup-plugin-filesize';
 
 import baseConfig from './rollup.config.base';
 
-export default {
+const plugins = baseConfig.plugins || [];
+
+const config: RollupOptions = {
   ...baseConfig,
   plugins: [
-    ...baseConfig.plugins,
+    ...plugins,
     strip({
       include: ['**/*.(js|ts)'],
       labels: ['unittest'],
@@ -14,3 +17,5 @@ export default {
     filesize(),
   ],
 };
+
+export default config;

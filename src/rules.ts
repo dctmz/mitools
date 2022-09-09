@@ -1,4 +1,10 @@
-import { CONTAIN_SPACE, ONLY_LETTER, ONLY_NUMBER, REPEAT_TIMES, SPECIAL_CHARACTER } from './reg';
+import {
+  CONTAIN_SPACE,
+  ONLY_LETTER,
+  ONLY_NUMBER,
+  REPEAT_TIMES,
+  SPECIAL_CHARACTER,
+} from './reg';
 
 /**
  * 强密码

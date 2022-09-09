@@ -12,7 +12,7 @@ module.exports = {
   plugins: ['prettier', '@typescript-eslint', 'simple-import-sort', 'import'], //定义了该eslint文件所依赖的插件
   rules: {
     'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
+    // 'simple-import-sort/exports': 'error',
     'import/first': 'error',
     // 'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',

@@ -1,12 +1,15 @@
+import { RollupOptions } from 'rollup';
+
 // import livereload from 'rollup-plugin-livereload';
 // import serve from 'rollup-plugin-serve';
-
 import baseConfig from './rollup.config.base';
 
-export default {
+const plugins = baseConfig.plugins || [];
+
+const config: RollupOptions = {
   ...baseConfig,
   plugins: [
-    ...baseConfig.plugins,
+    ...plugins,
     // serve({
     //   port: 8080,
     //   contentBase: ['lib', 'examples/html'],
@@ -17,3 +20,5 @@ export default {
     // }),
   ],
 };
+
+export default config;

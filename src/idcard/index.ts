@@ -60,7 +60,10 @@ const isIdCardNo = (str: string) => {
     if (!arrSplit) return false;
     const dtmBirth = new Date(`19${arrSplit[2]}/${arrSplit[3]}/${arrSplit[4]}`);
     // let bGoodDay;
-    const bGoodDay = dtmBirth.getFullYear() === Number(arrSplit[2]) && dtmBirth.getMonth() + 1 === Number(arrSplit[3]) && dtmBirth.getDate() === Number(arrSplit[4]);
+    const bGoodDay =
+      dtmBirth.getFullYear() === Number(arrSplit[2]) &&
+      dtmBirth.getMonth() + 1 === Number(arrSplit[3]) &&
+      dtmBirth.getDate() === Number(arrSplit[4]);
     if (!bGoodDay) {
       return false;
     }
@@ -82,7 +85,10 @@ const isIdCardNo = (str: string) => {
     if (!arrSplit) return false;
     const dtmBirth = new Date(`${arrSplit[2]}/${arrSplit[3]}/${arrSplit[4]}`);
 
-    const bGoodDay = dtmBirth.getFullYear() === Number(arrSplit[2]) && dtmBirth.getMonth() + 1 === Number(arrSplit[3]) && dtmBirth.getDate() === Number(arrSplit[4]);
+    const bGoodDay =
+      dtmBirth.getFullYear() === Number(arrSplit[2]) &&
+      dtmBirth.getMonth() + 1 === Number(arrSplit[3]) &&
+      dtmBirth.getDate() === Number(arrSplit[4]);
     if (!bGoodDay) {
       return false;
     }
