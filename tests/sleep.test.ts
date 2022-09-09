@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { sleep } from './../src/sleep';
+import { sleep } from '../src/sleep';
 
 describe('sleep test', () => {
   it('serial test', async () => {

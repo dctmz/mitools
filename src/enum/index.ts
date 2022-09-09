@@ -9,4 +9,3 @@ export const enum2options = (enums: Record<string | number, any>) => {
     return { label: enums[key], value: reg.test(key) ? Number(key) : key };
   });
 };
-export default enum2options;

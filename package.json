@@ -3,15 +3,13 @@
   "version": "0.0.8",
   "description": "一些常用的工具类",
   "homepage": "https://github.com/dctmz/mitools",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:dctmz/mitools.git"
   },
   "files": [
-    "src",
-    "lib",
-    "typings"
+    "lib/*"
   ],
   "typings": "lib",
   "scripts": {
@@ -76,7 +74,6 @@
     "prettier": "^2.7.1",
     "rollup": "^2.79.0",
     "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-filesize": "^9.1.2",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-node-polyfills": "^0.2.1",

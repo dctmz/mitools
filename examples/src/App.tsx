@@ -1,6 +1,6 @@
 import './App.css';
 
-// import { openUrl } from 'mitools';
+import { openUrl, telTo } from 'mitools';
 
 function App() {
   return (
@@ -11,6 +11,13 @@ function App() {
         }}
       >
         点击我打开百度
+      </button>
+      <button
+        onClick={() => {
+          telTo('186XXXX0887');
+        }}
+      >
+        点击我打电话
       </button>
     </div>
   );

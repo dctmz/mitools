@@ -39,7 +39,7 @@ const cities = {
 /**
  * 身份证校验算法
  */
-const isIdCardNo = (str: string) => {
+export const isIdCardNo = (str: string) => {
   let num = str.toUpperCase();
   // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X。
   if (!/(^\d{15}$)|(^\d{17}([0-9]|X)$)/.test(num)) {
@@ -108,5 +108,3 @@ const isIdCardNo = (str: string) => {
   }
   return false;
 };
-
-export default isIdCardNo;

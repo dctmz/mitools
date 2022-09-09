@@ -1,6 +1,7 @@
 import strip from '@rollup/plugin-strip';
 import { RollupOptions } from 'rollup';
 import filesize from 'rollup-plugin-filesize';
+import { terser } from 'rollup-plugin-terser';
 
 import baseConfig from './rollup.config.base';
 
@@ -10,6 +11,7 @@ const config: RollupOptions = {
   ...baseConfig,
   plugins: [
     ...plugins,
+    terser(),
     strip({
       include: ['**/*.(js|ts)'],
       labels: ['unittest'],

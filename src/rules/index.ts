@@ -4,7 +4,7 @@ import {
   ONLY_NUMBER,
   REPEAT_TIMES,
   SPECIAL_CHARACTER,
-} from './reg';
+} from '../reg';
 
 /**
  * 强密码
