@@ -11,7 +11,7 @@
   "files": [
     "lib/*"
   ],
-  "typings": "lib",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.ts --configPlugin typescript",
     "build": "rollup --environment NODE_ENV:development -c scripts/rollup.config.prod.ts --configPlugin typescript",
