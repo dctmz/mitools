@@ -1,8 +1,6 @@
 import './App.css';
 
-import { openUrl } from 'mitools';
-
-// import { openUrl, telTo } from 'mitools';
+import { openUrl, telTo } from 'mitools';
 
 function App() {
   return (
