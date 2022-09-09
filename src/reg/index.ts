@@ -22,6 +22,8 @@ export const ONLY_LETTER_REG = /[A-Za-z]/;
 export const ONLY_NUMBER_REG = /\d/;
 /** 空格 */
 export const CONTAIN_SPACE_REG = /\s/g;
+
+// TODO 以下正则还未添加
 /** 中文字符 */
 export const CHINESE_CHARACTER_REG = /[\u4e00-\u9fa5]/gm;
 /** 双字节字符 */
