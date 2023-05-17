@@ -1,6 +1,7 @@
 import { includePath, isUrl, openUrl, samePath } from "./url";
 import { isWechatDev } from "./user-agent";
 
+export { arrAddition } from './arithmetic';
 export { enum2options } from "./enum";
 export { isIdCardNo } from "./idcard";
 export { fastOssProcessUrl, getOssProcessUrl, transformObject } from "./oss";
@@ -20,15 +21,10 @@ export { sleep } from "./sleep";
 export { getRandomString } from "./string";
 export { isAndroid, isApple, isWxBrowser } from "./user-agent";
 export {
-  // str
-  // ua
   isWechatDev,
-
-  /** url */
   openUrl,
   includePath,
   samePath,
   isUrl,
-  /** reg */
 };
 

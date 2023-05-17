@@ -1,10 +1,5 @@
 lockfileVersion: '6.0'
 
-dependencies:
-  '@dctxf/tsconfig':
-    specifier: ^1.0.1
-    version: 1.0.1
-
 devDependencies:
   '@vitest/browser':
     specifier: ^0.31.0
@@ -24,9 +19,6 @@ devDependencies:
   prettier:
     specifier: ^2.8.8
     version: 2.8.8
-  typescript:
-    specifier: ^5.0.4
-    version: 5.0.4
   vitest:
     specifier: ^0.31.0
     version: 0.31.0(@vitest/browser@0.31.0)(happy-dom@9.18.3)(jsdom@22.0.0)
@@ -44,11 +36,6 @@ packages:
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
-
-  /@dctxf/tsconfig@1.0.1:
-    resolution: {integrity: sha512-uNRqsaT0Uy0S7ypwXPduqKM+Tam22+BXlNagL2iumGZ1XVEDrjfRSW4pZXBMDpRyXyXLtRg8jM+8N4qTsB6gRA==}
-    engines: {node: '>=16'}
-    dev: false
 
   /@esbuild/android-arm64@0.17.19:
     resolution: {integrity: sha512-KBMWvEZooR7+kzY0BtbTQn0OAYY7CsiydT63pVEaPtVYF0hXbUaOyZog37DKxK7NF3XacBJOpYT4adIJh+avxA==}
@@ -417,8 +404,8 @@ packages:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: true
 
-  /@types/node@20.1.5:
-    resolution: {integrity: sha512-IvGD1CD/nego63ySR7vrAKEX3AJTcmrAN2kn+/sDNLi1Ff5kBzDeEdqWDplK+0HAEoLYej137Sk0cUU8OLOlMg==}
+  /@types/node@20.1.7:
+    resolution: {integrity: sha512-WCuw/o4GSwDGMoonES8rcvwsig77dGCMbZDrZr2x4ZZiNW4P/gcoZXe/0twgtobcTkmg9TuKflxYL/DuwDyJzg==}
     dev: true
 
   /@vitest/browser@0.31.0(rollup@2.79.1)(vitest@0.31.0):
@@ -1921,12 +1908,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript@5.0.4:
-    resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
-    engines: {node: '>=12.20'}
-    hasBin: true
-    dev: true
-
   /ufo@1.1.2:
     resolution: {integrity: sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==}
     dev: true
@@ -1958,7 +1939,7 @@ packages:
       convert-source-map: 1.9.0
     dev: true
 
-  /vite-node@0.31.0(@types/node@20.1.5):
+  /vite-node@0.31.0(@types/node@20.1.7):
     resolution: {integrity: sha512-8x1x1LNuPvE2vIvkSB7c1mApX5oqlgsxzHQesYF7l5n1gKrEmrClIiZuOFbFDQcjLsmcWSwwmrWrcGWm9Fxc/g==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -1968,7 +1949,7 @@ packages:
       mlly: 1.2.1
       pathe: 1.1.0
       picocolors: 1.0.0
-      vite: 4.3.6(@types/node@20.1.5)
+      vite: 4.3.6(@types/node@20.1.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -1979,7 +1960,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.3.6(@types/node@20.1.5):
+  /vite@4.3.6(@types/node@20.1.7):
     resolution: {integrity: sha512-cqIyLSbA6gornMS659AXTVKF7cvSHMdKmJJwQ9DXq3lwsT1uZSdktuBRlpHQ8VnOWx0QHtjDwxPpGtyo9Fh/Qg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2004,7 +1985,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
       esbuild: 0.17.19
       postcss: 8.4.23
       rollup: 3.21.8
@@ -2045,7 +2026,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.1.5
+      '@types/node': 20.1.7
       '@vitest/browser': 0.31.0(rollup@2.79.1)(vitest@0.31.0)
       '@vitest/expect': 0.31.0
       '@vitest/runner': 0.31.0
@@ -2068,8 +2049,8 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.5.0
-      vite: 4.3.6(@types/node@20.1.5)
-      vite-node: 0.31.0(@types/node@20.1.5)
+      vite: 4.3.6(@types/node@20.1.7)
+      vite-node: 0.31.0(@types/node@20.1.7)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less

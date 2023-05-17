@@ -11,9 +11,8 @@
   "files": [
     "lib/*"
   ],
-  "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc src/* --outDir lib",
+    "build": "tsc",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "lint": "eslint src",
@@ -39,10 +38,6 @@
     "happy-dom": "^9.18.3",
     "jsdom": "^22.0.0",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4",
     "vitest": "^0.31.0"
-  },
-  "dependencies": {
-    "@dctxf/tsconfig": "^1.0.1"
   }
 }
