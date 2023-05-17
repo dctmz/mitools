@@ -16,8 +16,8 @@ export const transformObject = (
   object?: Record<string, any> | number,
 ) => {
   if (!object) {
-return '';
-}
+    return '';
+  }
 
   if (typeof object === 'number') {
     return `${name},${object}`;
@@ -52,7 +52,7 @@ export const getOssProcessUrl = (
  * @returns {any}
  */
 export const fastOssProcessUrl = (url: string, w: number, q?: number) => getOssProcessUrl(url, {
-    resize: {w},
-    quality: {q: q || 80},
-    interlace: 1,
-  });
+  resize: { w },
+  quality: { q: q || 80 },
+  interlace: 1,
+});
