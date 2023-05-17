@@ -1,14 +1,13 @@
 import { describe, expect, it, vi } from 'vitest';
-
-import { isAndroid, isApple, isWechatDev, isWxBrowser } from '../../src/ua';
+import { isAndroid, isApple, isWechatDev, isWxBrowser } from '../../src/user-agent';
 import { uas } from './uas';
 
-describe(`android test`, () => {
+describe('android test', () => {
   // 模拟环境
   vi.stubGlobal('navigator', {
     userAgent: uas.android,
   });
-  it(`isAndroid true`, () => {
+  it('isAndroid true', () => {
     expect(isAndroid()).toBe(true);
   });
   it('isApple false', () => {

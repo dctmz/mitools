@@ -4,11 +4,11 @@
  */
 export const isAndroid = () => {
   const u = navigator.userAgent.toLocaleLowerCase();
-  if (u.indexOf('android') > -1 || u.indexOf('adr') > -1) {
+  if (u.includes('android') || u.includes('adr')) {
     return true;
-  } else {
-    return false;
   }
+
+    return false;
 };
 
 /**
@@ -17,8 +17,8 @@ export const isAndroid = () => {
  */
 export const isApple = () => {
   const u = navigator.userAgent.toLocaleLowerCase();
-  const iPad = u.indexOf('ipad') > -1;
-  const iPhone = u.indexOf('iphone') > -1;
+  const iPad = u.includes('ipad');
+  const iPhone = u.includes('iphone');
   return iPad || iPhone;
 };
 
@@ -37,15 +37,15 @@ export const isWechatDev = (): boolean => {
  */
 export const isWxBrowser = () => {
   const ua = navigator.userAgent;
-  const isWx = /MicroMessenger/i.test(ua);
+  const isWx = /micromessenger/i.test(ua);
   if (!isWx) {
     return false;
-  } else {
-    const isWxWork = /WxWork/i.test(ua);
+  }
+
+    const isWxWork = /wxwork/i.test(ua);
     if (isWxWork) {
       return false;
-    } else {
-      return true;
     }
-  }
+
+      return true;
 };

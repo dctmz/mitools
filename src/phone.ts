@@ -8,5 +8,6 @@ export const telTo = (mobile?: string) => {
   if (!mobile) {
     throw new Error('no mobile');
   }
+
   window.location.href = `tel:${mobile}`;
 };

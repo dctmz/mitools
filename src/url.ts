@@ -6,9 +6,7 @@ const reg = /\/$/g;
  * @param urls url 数组
  * @returns boolean
  */
-export const includePath = (url: string, urls: string[]) => {
-  return urls.map(i => i.replace(reg, '')).includes(url.replace(reg, ''));
-};
+export const includePath = (url: string, urls: string[]) => urls.map(i => i.replace(reg, '')).includes(url.replace(reg, ''));
 
 /**
  * 判断两个链接是否为同一个path
@@ -18,18 +16,16 @@ export const includePath = (url: string, urls: string[]) => {
  * @param url2 url
  * @returns boolean
  */
-export const samePath = (url1: string, url2: string) => {
-  return url1.replace(reg, '') === url2.replace(reg, '');
-};
+export const samePath = (url1: string, url2: string) => url1.replace(reg, '') === url2.replace(reg, '');
 
 /**
  * 检查一个字符串是否是url
  * @param str url
  * @returns Boolean
  */
-export const isUrl = (str: string) => {
+export const isUrl = (string_: string) => {
   const reg = /^https?:\/\//i;
-  return reg.test(str);
+  return reg.test(string_);
 };
 
 /**
@@ -41,7 +37,7 @@ export const openUrl = (url: string) => {
   a.href = url;
   a.target = '_blank';
   a.style.display = 'none';
-  document.body.appendChild(a);
+  document.body.append(a);
   a.click();
-  document.body.removeChild(a);
+  a.remove();
 };

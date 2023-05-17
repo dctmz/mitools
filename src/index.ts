@@ -1,7 +1,11 @@
-import { enum2options } from './enum';
-import { isIdCardNo } from './idcard';
-import { fastOssProcessUrl, getOssProcessUrl, transformObject } from './oss';
-import {
+import { includePath, isUrl, openUrl, samePath } from "./url";
+import { isWechatDev } from "./user-agent";
+
+export { enum2options } from "./enum";
+export { isIdCardNo } from "./idcard";
+export { fastOssProcessUrl, getOssProcessUrl, transformObject } from "./oss";
+export { telTo } from "./phone";
+export {
   CONTAIN_SPACE,
   EMAIL_REG,
   ID_CARD_REG,
@@ -9,46 +13,22 @@ import {
   ONLY_LETTER,
   ONLY_NUMBER,
   REPEAT_TIMES,
-  SPECIAL_CHARACTER,
-} from './reg';
-import { POWER_PASSWORD } from './rules';
-import { sleep } from './sleep';
-import { getRandomStr } from './str';
-import { telTo } from './telTo';
-import { isAndroid, isApple, isWechatDev, isWxBrowser } from './ua';
-import { includePath, isUrl, openUrl, samePath } from './url';
-
+  SPECIAL_CHARACTER
+} from "./reg";
+export { POWER_PASSWORD } from "./rules";
+export { sleep } from "./sleep";
+export { getRandomString } from "./string";
+export { isAndroid, isApple, isWxBrowser } from "./user-agent";
 export {
-  enum2options,
-  // idcard
-  isIdCardNo,
-  // oss
-  transformObject,
-  getOssProcessUrl,
-  fastOssProcessUrl,
-  // rules
-  POWER_PASSWORD,
   // str
-  getRandomStr,
   // ua
-  isAndroid,
-  isApple,
   isWechatDev,
-  isWxBrowser,
-  sleep,
-  telTo,
+
   /** url */
   openUrl,
   includePath,
   samePath,
   isUrl,
   /** reg */
-  MOBILE_REG,
-  EMAIL_REG,
-  ID_CARD_REG,
-  REPEAT_TIMES,
-  SPECIAL_CHARACTER,
-  ONLY_LETTER,
-  ONLY_NUMBER,
-  CONTAIN_SPACE,
 };
+

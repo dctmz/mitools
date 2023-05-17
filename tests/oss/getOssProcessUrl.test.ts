@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-
 import { fastOssProcessUrl, getOssProcessUrl } from '../../src/oss';
 
 describe('获取oss图片处理地址 test', () => {

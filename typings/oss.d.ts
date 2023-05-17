@@ -55,11 +55,11 @@ declare type OssProcessOptions = {
   /**
    * TODO 水印
    */
-  watermark?: Partial<{}>;
+  watermark?: Partial<Record<string, unknown>>;
   /**
    * TODO 自定义裁剪
    */
-  crop?: Partial<{}>;
+  crop?: Partial<Record<string, unknown>>;
   /**
    * TODO 质量变换
    */
@@ -83,35 +83,35 @@ declare type OssProcessOptions = {
   /**
    * TODO 格式转换
    */
-  format?: Partial<{}>;
+  format?: Partial<Record<string, unknown>>;
   /**
    * TODO 获取信息
    */
-  info?: Partial<{}>;
+  info?: Partial<Record<string, unknown>>;
   /**
    * TODO 自适应方向
    */
-  'auto-orient'?: Partial<{}>;
+  'auto-orient'?: Partial<Record<string, unknown>>;
   /**
    * TODO 内切圆
    */
-  circle?: Partial<{}>;
+  circle?: Partial<Record<string, unknown>>;
   /**
    * TODO 索引切割
    */
-  indexcrop?: Partial<{}>;
+  indexcrop?: Partial<Record<string, unknown>>;
   /**
    * TODO 圆角矩形
    */
-  'ounded-corners'?: Partial<{}>;
+  'ounded-corners'?: Partial<Record<string, unknown>>;
   /**
    * TODO 模糊效果
    */
-  blur?: Partial<{}>;
+  blur?: Partial<Record<string, unknown>>;
   /**
    * TODO 旋转
    */
-  rotate?: Partial<{}>;
+  rotate?: Partial<Record<string, unknown>>;
   /**
    * 渐进显示
    * @desc
@@ -122,17 +122,17 @@ declare type OssProcessOptions = {
   /**
    * TODO 获取图片主色调
    */
-  'average-hue'?: Partial<{}>;
+  'average-hue'?: Partial<Record<string, unknown>>;
   /**
    * TODO 亮度
    */
-  bright?: Partial<{}>;
+  bright?: Partial<Record<string, unknown>>;
   /**
    * TODO 锐化
    */
-  sharpen?: Partial<{}>;
+  sharpen?: Partial<Record<string, unknown>>;
   /**
    * TODO 对比度
    */
-  contrast?: Partial<{}>;
+  contrast?: Partial<Record<string, unknown>>;
 };

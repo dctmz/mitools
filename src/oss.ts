@@ -13,13 +13,17 @@
  */
 export const transformObject = (
   name: string,
-  obj?: Record<string, any> | number,
+  object?: Record<string, any> | number,
 ) => {
-  if (!obj) return '';
-  if (typeof obj === 'number') {
-    return `${name},${obj}`;
+  if (!object) {
+return '';
+}
+
+  if (typeof object === 'number') {
+    return `${name},${object}`;
   }
-  return `${name},` + Object.keys(obj).map(key => `${key}_${obj[key]}`);
+
+  return `${name},` + Object.keys(object).map(key => `${key}_${object[key]}`);
 };
 
 /**
@@ -47,10 +51,8 @@ export const getOssProcessUrl = (
  * @param {any} q?:number
  * @returns {any}
  */
-export const fastOssProcessUrl = (url: string, w: number, q?: number) => {
-  return getOssProcessUrl(url, {
-    resize: { w },
-    quality: { q: q || 80 },
+export const fastOssProcessUrl = (url: string, w: number, q?: number) => getOssProcessUrl(url, {
+    resize: {w},
+    quality: {q: q || 80},
     interlace: 1,
   });
-};

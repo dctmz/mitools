@@ -3,8 +3,11 @@
  * @param timeout 毫秒
  * @returns Promise
  */
-export const sleep = (timeout: number) => {
-  return new Promise(resolve => setTimeout(() => resolve(true), timeout));
-};
+export const sleep = async (timeout: number) =>
+  new Promise(resolve =>
+    setTimeout(() => {
+      resolve(true);
+    }, timeout),
+  );
 
 export default sleep;
