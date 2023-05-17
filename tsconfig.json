@@ -1,6 +1,9 @@
 {
-  "extends": "@dctxf/tsconfig",
   "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2017"],
+    "target": "ES5",
+    "allowJs": true,
+    "typeRoots": ["typings"],
     "outDir": "./lib"
   },
   "include": ["src", "typings", "tests", "scripts"]

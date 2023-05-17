@@ -8,7 +8,7 @@ export const isAndroid = () => {
     return true;
   }
 
-    return false;
+  return false;
 };
 
 /**
@@ -42,10 +42,10 @@ export const isWxBrowser = () => {
     return false;
   }
 
-    const isWxWork = /wxwork/i.test(ua);
-    if (isWxWork) {
-      return false;
-    }
+  const isWxWork = /wxwork/i.test(ua);
+  if (isWxWork) {
+    return false;
+  }
 
-      return true;
+  return true;
 };

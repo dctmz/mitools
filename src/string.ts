@@ -6,13 +6,14 @@ const Chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
  * @returns string
  */
 export const getRandomString = (length?: number | string) => {
+  let len = 0
   if (!length) {
-    throw new Error('length is required');
+    len = 0
+  } else {
+    len = Number(length) < 0 ? 0 : Number(length)
   }
-  const len = Number(length)
-  length = len < 0 ? 0 : Number(length);
   let result = '';
-  for (let i = length; i > 0; --i) {
+  for (let i = len; i > 0; --i) {
     result += Chars[Math.floor(Math.random() * Chars.length)];
   }
 
