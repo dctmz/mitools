@@ -14,7 +14,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "tsc src/* --outDir lib",
-    "test": "vitest",
+    "test": "vitest run",
     "coverage": "vitest run --coverage",
     "lint": "eslint src",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix && npm run lint:prettier",
@@ -34,11 +34,12 @@
   },
   "devDependencies": {
     "@vitest/browser": "^0.31.0",
+    "@vitest/coverage-c8": "^0.31.0",
+    "eslint": "^8.40.0",
     "happy-dom": "^9.18.3",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4",
-    "vitest": "^0.31.0",
-    "webdriverio": "^8.10.2",
-    "window": "^4.2.7"
+    "vitest": "^0.31.0"
   },
   "dependencies": {
     "@dctxf/tsconfig": "^1.0.1"
