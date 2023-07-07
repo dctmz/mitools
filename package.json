@@ -22,7 +22,7 @@
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint-staged": "lint-staged",
     "showConfig": "tsc --showConfig",
-    "pub": "npm build && npm publish"
+    "pub": "npm run build && npm publish"
   },
   "keywords": [],
   "author": "dctmz",
