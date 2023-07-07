@@ -6,7 +6,9 @@
     "typeRoots": ["typings"],
     "outDir": "./lib",
     "declaration": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
