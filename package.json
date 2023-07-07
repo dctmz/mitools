@@ -1,6 +1,6 @@
 {
   "name": "mitools",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "description": "一些常用的工具类",
   "homepage": "https://github.com/dctmz/mitools",
   "main": "./lib/index.js",
@@ -21,7 +21,8 @@
     "lint:prettier": "prettier -c --write \"src/**/*\" --end-of-line auto",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint-staged": "lint-staged",
-    "showConfig": "tsc --showConfig"
+    "showConfig": "tsc --showConfig",
+    "pub": "npm build && npm publish"
   },
   "keywords": [],
   "author": "dctmz",
